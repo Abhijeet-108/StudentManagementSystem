@@ -1,8 +1,9 @@
-from PyQt6.QtWidgets import QApplication,QPushButton,\
-    QLineEdit, QVBoxLayout, QLabel, QWidget, QGridLayout,QHBoxLayout
+from PyQt6.QtWidgets import QApplication, QPushButton, \
+    QLineEdit, QVBoxLayout, QLabel, QWidget, QGridLayout, QHBoxLayout
 
 import sys
 from datetime import datetime
+
 
 class AgeCalculator(QWidget):
     def __init__(self):
@@ -25,7 +26,7 @@ class AgeCalculator(QWidget):
         grid.addWidget(date_birth_label, 1, 0)
         grid.addWidget(self.date_birth_line_edit, 1, 1)
         grid.addWidget(calculate_button, 2, 0, 1, 2)
-        grid.addWidget(self.output_label, 3,0,1,2)
+        grid.addWidget(self.output_label, 3, 0, 1, 2)
 
         self.setLayout(grid)
 
